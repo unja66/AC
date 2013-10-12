@@ -1,0 +1,38 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:orientation="vertical"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="#EAEAEA">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"  android:paddingLeft="10dp" android:paddingTop="9dp"
+        android:text="[ 방송 듣기 ]" android:textSize="16dp" android:textStyle="bold"
+        android:textColor="#000" android:background="#FFFF24" />
+    
+    <TextView
+        android:layout_width="fill_parent" android:layout_height="2dp"
+        android:text="" android:background="#D6C959" />
+    
+    <TextView android:id="@+id/mp3Title"
+        android:layout_width="fill_parent" android:layout_height="wrap_content" android:textSize="16dp"
+        android:textStyle="bold" android:padding="13dp" android:text="" android:background="#BDBDBD" />
+    
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="match_parent" >
+        <TextView android:layout_alignParentTop="true" android:id="@+id/introText"
+        android:layout_width="fill_parent" android:layout_height="wrap_content"
+        android:text="강의는 다운로드 후 들으실 수 있습니다." android:textSize="14dp" android:textColor="#353535"
+        android:paddingLeft="10dp" android:paddingTop="4dp" android:paddingBottom="4dp"/>
+        
+        <Button android:id="@+id/backToIndexButton" android:layout_alignParentBottom="true"
+            android:text="듣기 멈추고, 방송 목록으로 돌아가기" 
+            android:layout_width="fill_parent" android:layout_height="wrap_content" android:textColor="#000"/>
+        
+        <Button android:id="@+id/actionButton" 
+            android:layout_above="@id/backToIndexButton" android:layout_below="@id/introText"
+            android:layout_width="fill_parent" android:layout_height="match_parent" 
+            android:textColor="#000" android:textStyle="bold" android:textSize="18dp"
+            android:text="동작 준비 중"/>
+        
+    </RelativeLayout>
+    
+</LinearLayout>
